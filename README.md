@@ -25,7 +25,7 @@ internal sealed class MyMigrationConfiguration : DbMigrationsConfiguration<FooBa
   	SetSqlGenerator("MySql.Data.MySqlClient", new MySql.Data.Entity.MySqlMigrationSqlGenerator());
   }
   
-  protected override void Seed(OrderBoxContext context) { }
+  protected override void Seed(FooBarContext context) { }
 }
 ```
 
