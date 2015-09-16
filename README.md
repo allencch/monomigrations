@@ -3,7 +3,8 @@ MonoMigrations is to provide some migrations feature based on Entity Framework 6
 Entity Framework 6 Migrations work with PowerShell. However, in Linux, PowerShell is not available.
 
 ## Requirement
-- EntityFramework
+- Mono
+- EntityFramework (version 6)
 - MySql.Data.Entity.EF6 (depend on your project)
 
 ## Usage
