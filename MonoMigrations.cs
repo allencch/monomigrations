@@ -87,6 +87,10 @@ namespace MonoMigrations
 	public class MigrationsMain<TContext> where TContext : DbContext {
 		public MigrationsMain(DbMigrationsConfiguration<TContext> config, string[] args) {
 			var monoMigration = new MonoMigrations<TContext>(config);
+			if (args.Length == 0) {
+				Console.WriteLine ("This command should run with parameters");
+				return;
+			}
 			if (args [0] == "-a") {
 				Console.WriteLine ("Migrations add");
 				string name = args.Length >= 2 ? args [1] : "default";
